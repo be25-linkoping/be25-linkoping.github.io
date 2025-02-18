@@ -1,3 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background: red;
+    background: #f0f0f0;
+    background-image: url("/swan-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+}
+
+h1{
+    color: #fff;
+}
+
+p {
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    line-height: 1.6;
+}
+
+ol{
+    background-color: black;
+    color: white;
+}
+
+ol li{
+    padding-left: 2rem;
+}
+
+
+.pt-text{
+    font-size: 12pt;
+    font-style: italic;
+}
+.px-text{
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.bold-text{
+    font-weight: 900;
+    color: #e1e1e1;
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.bg-test {
+    border: 1px solid #333;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 25px;
+}
+
+.hex{
+    background-color: #ff5733;
+}
+
+.rgba{
+    background-color: rgb(255, 191, 0, 0.5);
+}
+
+.hsl{
+    background: hsl(240, 100%, 50%)
+}
+
+.linear-gradient{
+    background-image: linear-gradient(90deg, #000000, #ffffff, #000000);
+}
+
+.radial-gradient{
+    background: radial-gradient(circle, #000000, #ffffff);
 }
