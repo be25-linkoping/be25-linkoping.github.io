@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 *{
@@ -8,8 +7,7 @@
     box-sizing: border-box;
 }
 
-body{
-    background: #f0f0f0;
+html{
     background-image: url("/swan-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,20 +15,23 @@ body{
     min-height: 100vh;
 }
 
+body{
+    min-height: 100vh;
+    background-color: rgba(255,255,255, 0.8);
+}
+
 h1{
-    color: #fff;
+    font-size: 3.2rem;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Imperial Script";
+    font-weight: lighter;
 }
 
 p {
     font-size: 1rem;
-    color: white;
-    background-color: black;
     line-height: 1.6;
-}
-
-ol{
-    background-color: black;
-    color: white;
 }
 
 ol li{
@@ -49,7 +50,6 @@ ol li{
 
 .bold-text{
     font-weight: 900;
-    color: #e1e1e1;
 }
 
 
