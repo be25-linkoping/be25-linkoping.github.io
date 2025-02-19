@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Min Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            color: #333333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(to right, #FF5733, #C70039);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        main {
+            margin-top: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px #000000; /* Textskugga för rubriken [1, 2] */
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            letter-spacing: 1px; /* Justera avståndet mellan bokstäverna [1, 2] */
+        }
+        nav ul {
+            list-style-type: none;
+            background-color: #333333;
+            padding: 0;
+            margin: 0;
+            display: flex; /* Flexbox för horisontell layout [3, 4] */
+            justify-content: center; /* Centrera länkarna [5, 6] */
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            display: block;
+            padding: 14px 20px;
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #111111;
+        }
+        .portfolio-item {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #fff;
+        }
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Välkommen till Min Portfolio</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Hem</a></li>
+            <li><a href="#about">Om</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>Om Mig</h2>
+            <p>
+                Jag är en passionerad webbutvecklare med erfarenhet inom HTML, CSS och JavaScript.
+                Jag älskar att skapa användarvänliga och responsiva webbplatser. Med kunskaper inom
+                Flexbox [5, 6] och CSS Grid [7, 8] kan jag bygga komplexa layouter som ser bra ut på alla enheter.
+            </p>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-item">
+                <h3>Projekt 1: Webbplats för Lokala Restaurangen</h3>
+                <img src="https://placehold.jp/800x400.jpg?text=Lokala+Restaurangen" alt="Webbplats för Lokala Restaurangen">
+                <p>
+                    En responsiv webbplats designad för en lokal restaurang. Använder HTML, CSS och JavaScript.
+                    Inkluderar en online-menyn och ett bokningssystem.
+                </p>
+            </div>
+
+            <div class="portfolio-item">
+                <h3>Projekt 2: E-handelsbutik för Hantverk</h3>
+                <img src="https://placehold.jp/800x400.jpg?text=Hantverk" alt="E-handelsbutik för Hantverk">
+                <p>
+                    En e-handelsbutik byggd med HTML, CSS och JavaScript.  Fokus på användarvänlighet och responsiv design.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <p>
+                Kontakta mig gärna för att diskutera ditt nästa webbprojekt!
+            </p>
+        </section>
+    </main>
+</body>
+</html>

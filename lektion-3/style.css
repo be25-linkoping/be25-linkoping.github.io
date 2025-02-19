@@ -1,30 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
-    background-image: url("/swan-bg.jpg");
+html {
+    background-image: url("/lektion-3/swan-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     min-height: 100vh;
 }
 
-body{
+body {
     min-height: 100vh;
-    background-color: rgba(255,255,255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
-h1{
+h1 {
     font-size: 3.2rem;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Imperial Script";
     font-weight: lighter;
 }
@@ -34,27 +39,28 @@ p {
     line-height: 1.6;
 }
 
-ol li{
+ol li {
     padding-left: 2rem;
 }
 
 
-.pt-text{
+.pt-text {
     font-size: 12pt;
     font-style: italic;
 }
-.px-text{
+
+.px-text {
     font-size: 12px;
     font-weight: 900;
 }
 
-.bold-text{
+.bold-text {
     font-weight: 900;
 }
 
 
 
-.container{
+.container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -67,22 +73,22 @@ ol li{
     margin-bottom: 25px;
 }
 
-.hex{
+.hex {
     background-color: #ff5733;
 }
 
-.rgba{
-    background-color: rgb(255, 191, 0, 0.5);
+.rgba {
+    background-color: rgba(255, 191, 0, 0.5);
 }
 
-.hsl{
+.hsl {
     background: hsl(240, 100%, 50%)
 }
 
-.linear-gradient{
+.linear-gradient {
     background-image: linear-gradient(90deg, #000000, #ffffff, #000000);
 }
 
-.radial-gradient{
+.radial-gradient {
     background: radial-gradient(circle, #000000, #ffffff);
 }
