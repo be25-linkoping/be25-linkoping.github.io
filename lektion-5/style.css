@@ -1,0 +1,88 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    margin-bottom: 2rem;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/lektion-5/hero-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+header::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+header h1 {
+    /* padding: 2rem 0; */
+    text-align: center;
+    font-size: 10rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    transform: rotate(10deg);
+    color: #fff;
+}
+
+form {
+    max-width: 500px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+form div {
+    margin-bottom: 0.8rem;
+}
+
+h2 {
+    margin-bottom: 0.4rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 0.4rem;
+    border: 1px solid #333;
+    border-radius: 0.2rem;
+}
+
+button {
+    padding: 0.6rem 1.2rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    align-self: flex-end;
+}
+
+button:hover {
+    opacity: 0.8;
+}
