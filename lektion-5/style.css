@@ -29,6 +29,7 @@ header::before {
     left: 0;
     height: 100%;
     width: 100%;
+    
 }
 
 header h1 {
@@ -39,6 +40,8 @@ header h1 {
     letter-spacing: 0.3rem;
     transform: rotate(10deg);
     color: #fff;
+    text-shadow: 1px 0px 5px rgba(255,255,255,0.84);
+
 }
 
 form {

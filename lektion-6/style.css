@@ -1,0 +1,100 @@
+.my-container{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.my-box{
+    width: 300px;
+    height: 150px;
+    background-color: hotpink;
+    border: 1px solid black;
+
+    transition: background-color 1s, border-radius 2s;
+
+    /* border-radius: 15px;
+    transition-property: background-color;
+    transition-duration: 4s;
+    transition-delay: 2s; */
+
+}
+
+.my-box:hover{
+    background-color: red;
+    border-radius: 300px;
+}
+
+
+.btn{
+    background-color: chartreuse;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 1s ease;
+}
+
+.btn:hover{
+    background-color: purple;
+    padding: 1rem 2rem;
+    transform: rotate(5deg) scale(1.05) translate(100px);
+}
+
+.embiggen{
+    height: 100px;
+    width: 500px;
+    background-color: seagreen;
+    border: 2px dotted black;
+}
+
+.embiggen:hover{
+    transform: scale(1.5);
+}
+
+
+
+.wiggle-box{
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+}
+
+.wiggle-box:hover{
+    animation: wiggle 1s;
+}
+
+@keyframes wiggle {
+    0%{ transform: scale(1) }
+    20% { transform: scale(1.1) translateX(20px); }
+    40% { transform: scale(1.1) translateX(-20px); }
+    60% { transform: scale(1.1) translate(20px); }
+    80% { transform: scale(1.1) translate(-20px); }
+    100% { transform: scale(1.2); }
+}
+
+
+.sliding-box{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+
+    animation-name: slide;
+    animation-duration: 5s;
+    /* animation-timing-function: cubic-bezier(1, 0, 0, 1); */
+    animation-iteration-count: 2;
+}
+
+@keyframes slide{
+    0%{ transform: translateX(0); }
+    25% {transform: translateX(500px)}
+    /* 50% {transform: translateX(0)} */
+    75%{transform: translateX(-500px)}
+    100% { transform: translateX(0); }
+}
+
+.my-container > a{
+    background-color: red;
+}
+
+.my-container a{
+    color: green;
+}
