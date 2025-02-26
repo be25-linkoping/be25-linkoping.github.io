@@ -1,0 +1,47 @@
+*{
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Sigmar;
+}
+
+h1{
+    font-size: 3.8rem;
+    text-align: center;
+    padding: 2.4rem 0;
+}
+
+header{
+    background-color: deepskyblue;
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    background-color: yellowgreen;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container :nth-child(5){
+    background: red;
+}
+
+footer{
+    background-color: indigo;
+    text-align: center;
+}
